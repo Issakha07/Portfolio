@@ -1,0 +1,446 @@
+html {
+  min-width: none;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(251, 251, 251);
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
+  line-height: 0;
+}
+
+/* -------------------EN-TETE------------------------- */
+nav {
+  height: 100px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background: #333;
+  padding: 0 2%;
+  font-weight: 700;
+  position: relative;
+}
+nav .profil {
+  display: flex; /*Pour aligner le titre et l'image sur une ligne*/
+  align-items: center; /*Pour aligner notre titre à notre image*/
+  cursor: pointer;
+}
+nav .profil img {
+  object-fit: cover;
+  height: 50px;
+  border-radius: 50%;
+}
+nav .profil h1 {
+  font-size: 18px;
+}
+nav .profil h1:hover {
+  color: red;
+}
+nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background: rgb(251, 251, 251);
+  color: rgba(0, 0, 0, 0.924);
+  border-radius: 5px;
+}
+
+#lien_langageCv a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------TITRE DE QUALIFICATION SLIDE------------ */
+section {
+  margin: 10px 0 0 2%;
+}
+section .qualif {
+  display: inline-flex;
+  height: 150px;
+}
+section .qualif .static-text {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rosybrown;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+section .qualif .dynamic-text {
+  margin-top: 0px;
+  height: 90px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.787);
+  line-height: 90px;
+  overflow: hidden;
+}
+section .qualif .dynamic-text li {
+  list-style: none;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  font-family: "Poppins Medium";
+  animation: slide 10s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.qualif .dynamic-text li span {
+  position: relative;
+}
+section .qualif .dynamic-text li span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(251, 251, 251);
+  border-left: 2px solid #000;
+  animation: typing 2.5s steps(19) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+/* ----------------------PROJETS----------------------- */
+
+.projets {
+  padding: 2%;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 155%;
+  margin-left: 0px;
+  color: rgba(0, 0, 0, 0.787);
+  text-transform: uppercase;
+}
+.projets .titre {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.projets .cartes_global {
+  display: flex;
+  flex-wrap: wrap; /*Pour adapter les images au format mobile*/
+  align-items: center;
+  justify-content: center;
+}
+.projets .cartes_global .carte img {
+  height: 300px;
+  width: 450px;
+  margin-right: 37px;
+  margin-top: 37px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.projets .cartes_global .carte h1 {
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  height: 25px;
+  padding-top: 25px;
+  margin: 27px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+.projets .cartes_global .carte h1:hover {
+  border: 2px solid rgba(0, 0, 0, 0.787);
+  background: rgba(0, 0, 0, 0.787);
+  color: #fff;
+  margin: 27px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+/* ----------------------LOGO_LANGAGES----------------------- */
+.langages {
+  margin: 0;
+  padding: 2%;
+}
+#langagCv {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.langages h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.787);
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-size: 30px;
+}
+.langages .lang_img {
+  display: inline-flex;
+  overflow-x: scroll;
+}
+.langages .lang_img::-webkit-scrollbar {
+  display: none;
+}
+.langages .lang_img p img {
+  height: 60px;
+  margin: 35px;
+}
+
+/* ----------------------CV----------------------- */
+.cv h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.787);
+  margin-top: 60px;
+  margin-bottom: 45px;
+  font-size: 30px;
+}
+.cv p {
+  text-align: center;
+  color: black;
+}
+.cv .cv_img {
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+.cv .cv_img a img {
+  height: 85px;
+}
+
+/* ----------------------FOOTER----------------------- */
+.footer {
+  background: #333;
+  margin: 0;
+  padding: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*Pour séparer notre paragraphe et div contact*/
+}
+#whatsapp {
+  height: 30px;
+  margin-bottom: -5px;
+}
+.footer .media_socio {
+  display: flex;
+}
+.footer .media_socio p {
+  border: 2px solid #fff;
+  color: #000;
+  border-radius: 100%;
+  padding: 10px;
+  height: 20px;
+  margin-right: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.footer .media_socio p a .in {
+  margin-top: -5px;
+}
+.footer .media_socio p a img {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer .media_socio p:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* PORTABLE */
+@media all and (min-width: 300px) and (max-width: 767px) {
+  body {
+    margin: 0;
+    line-height: 0;
+    width: auto;
+    overflow-x: hidden;
+  }
+  section .qualif {
+    display: none;
+  }
+
+  /* -------------------EN-TETE------------------------- */
+
+  nav {
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav ul li {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  /* ------------------PROJETS------------------- */
+
+  .projets {
+    overflow-x: hidden;
+    background-image: none;
+  }
+  .projets .titre {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .projets .cartes_global {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .projets .cartes_global .carte img {
+    height: 200px;
+    width: 300px;
+    margin-right: 0px;
+  }
+  .projets .cartes_global .carte h1 {
+    border: 2px solid rgba(0, 0, 0, 0.787);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    height: 25px;
+    padding-top: 25px;
+    width: 80%;
+    margin: 27px;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  .projets .cartes_global .carte h1:hover {
+    border: 2px solid rgba(0, 0, 0, 0.787);
+    background: rgba(0, 0, 0, 0.787);
+    color: #fff;
+    margin: 27px;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+
+  /* ------------------LOGO_LANGAGES------------------- */
+
+  .langages h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  /* ------------------CV------------------- */
+
+  .cv {
+    margin: 0;
+  }
+  .cv h1 {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-size: 30px;
+  }
+  .cv p {
+    font-size: 13px;
+  }
+
+  /* ------------------FOOTER------------------- */
+
+  .footer {
+    padding: 2%;
+    padding-bottom: 20px;
+    display: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .footer .media_socio {
+    padding-top: 12px;
+  }
+}
+
+/* Ipad */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  section .qualif {
+    display: none;
+  }
+  .projets .cartes_global .carte img {
+    margin-right: 0px;
+  }
+  .projets .cartes_global .carte h1 {
+    margin-right: none;
+  }
+  .langages h1 {
+    font-size: 41px;
+  }
+  .cv h1 {
+    font-size: 41px;
+  }
+  .cv p {
+    font-size: 27px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer p {
+    font-size: 20px !important;
+  }
+}
+
+/* Ipad Pro*/
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+  .projets .cartes_global {
+    display: block;
+  }
+  .projets .cartes_global .carte h1 {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .langages h1 {
+    font-size: 41px;
+  }
+  .cv h1 {
+    font-size: 41px;
+  }
+  .cv p {
+    font-size: 27px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer p {
+    font-size: 25px !important;
+  }
+}
+
+
+
+/* le probleime des espacements blanches était causé par les line-height et l'absence de *{
+    margin: 0;
+
+    padding: 0;
+    aussi certaines width de certains de div
+}*/
