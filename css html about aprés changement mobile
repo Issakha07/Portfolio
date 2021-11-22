@@ -1,0 +1,326 @@
+css
+/* Partie mobile */
+@media (min-width: 279px) and (max-width: 800px) {
+  .col1{
+  width: 224px;
+  height: 44px;
+  left: 631px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+  margin-left: 0px;
+}
+  .contenu{
+    padding-top: 30px;
+    margin-left: 12px;
+    width: 100%;
+  }
+  .colonnefondateur{
+    width: 90%;
+  }
+  .colonnepourknous{
+    width: 100%;
+    padding-left: 3%;
+  }
+  .rowlogo1{
+    width: 100%;
+  }
+  .rowlogo2{
+    width: 100%;
+  }
+  .rowlogo3{
+    width: 100%;
+  }
+  #rowlogo1img1{
+    margin-left: 0rem;
+  }
+  #rowlogo2img1{
+    margin-left: 0rem;
+  }
+  #rowlogo3img1{
+    margin-left: 0rem;
+  }
+  .pns{
+    margin-top: 70px;
+  }
+  .plate{
+    font-size: 14px;
+  }
+  .plate1{
+    font-size: 13px;
+  }
+  
+  /* .txtcard{
+    width: 121px!important;
+  } */
+  .cartetext{
+    width: 0px!important;
+  }
+  .missionvaleur{
+    margin-left:0px; 
+    margin-right: 0px!important;
+    background-color: #ffffff;
+  }
+  
+ }
+ ------------------------------------------------------------------------------------------
+ <div class=" home" style="height: 100%; overflow: scroll; overflow-x: hidden;">
+  <div class="row ">
+    <div class="col-xs-12">
+      <app-header></app-header>
+  </div>
+  </div>
+  <div class="row  ">
+    <div class="col-xs-12">
+      <section style="background: #FFFFFF;">
+        <div class="contain" style="margin-top: 70px;">
+          <div class="content" >
+            <mat-toolbar class="mat-elevation-z2">
+              <div fxLayout="row" fxLayoutAlign="center" fxFlex="100" fxLayoutGap="20px" fxShow="true" fxHide.lt-md="true">
+                <a mat-button class="no-hover-effect"  routerLink="/opportunity" [queryParams]="{ label: 'Formations'}"> Je me forme</a>
+                <a mat-button class="no-hover-effect" routerLink="/opportunity">Je postule à un Job</a>
+                <a mat-button class="no-hover-effect" routerLink="/agenda">Agenda</a>
+                <a mat-button class="no-hover-effect">Actualités</a>
+              </div>
+            </mat-toolbar>
+      
+            <img src="./assets/images/Rectangle 691.png" alt="" style="width: 100%;">
+            <div class="text">
+              <span>À propos du Guichet Jeunesse</span> <br> <br>
+              <p> En savoir plus sur ce que nous faisons à CJS et les
+              <br> personnes derrière notre mission </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid contenu">
+          <div class="row" >
+            <div class="col-6 colonnefondateur">
+              <h1 class="col1">Les fondateurs</h1> <br>
+              <div class="col" >
+                <div class="row rowlogo1">
+                  <div class="col-3"><img id="rowlogo1img1" src="/assets/images/image 15.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 13.png" ></div>
+                  <div class="col-3"><img src="/assets/images/image 12.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 16 (1).png " ></div>
+                </div>
+                <br>
+                <div class="row rowlogo2">
+                  <div class="col-3"><img id="rowlogo2img1" src="/assets/images/image 14.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 19 (1).png"></div>
+                  <div class="col-3"><img src="/assets/images/image 17.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 21 (3).png"></div>
+                </div>
+                <br>
+                <div class="row rowlogo3">
+                  <div class="col-3"><img id="rowlogo3img1" src="/assets/images/image 23.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 20.png"></div>
+                  <div class="col-3"><img src="/assets/images/image 18.png"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 colonnepourknous">
+              <h1 class="pns">Pourquoi nous?</h1>
+              <h4 class="plate"  >Une plateforme, de nombreuses opportunités</h4>
+              <p class="plate1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tempor <br> at fringilla sollicitudin at sed. Sed elit, mauris nec at.
+                Nunc id <br> feugiat cursus imperdiet tincidunt amet id  semper.
+                Nibh pharetra <br> elementum pulvinar urna, velit elit.</p><br>
+              <p class="plate1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tempor <br> at fringilla sollicitudin at sed. Sed elit, mauris nec at.
+                Nunc id <br> feugiat cursus imperdiet tincidunt amet id  semper.
+                Nibh pharetra <br> elementum pulvinar urna, velit elit.</p><br>
+                <br> <br> <br>
+            </div>
+      
+          </div>
+      
+          <div class="row pt-3 missionvaleur">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <div class="cartetext">
+                      <p class="txtcard" id="cartex">
+                        <span id="mission">Notre mission</span><br> <br>
+                        Lorem ipsum dolor sit amet, sed odio semper consectetur adipiscing elit. <br> Quisque iaculis
+                        sed odio semper sed odio semper eleifend. Lorem ipsum <br> tempus eu libero  dolor sit amet, consectetur adipiscing elit. Integer <br>
+                        sapien neque, tempus sed odio semper eu libero a, congue consectetur <br> nunc. sed odio semper Duis at dictum tortor.  congue
+                        consectetur nunc. <br> Duis at dictum tortor.
+                      </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="cartetext">
+                      <p class="txtcard">
+                        <span id="mission">Nos valeurs</span><br> <br>
+                        Lorem ipsum dolor sit amet, sed odio semper consectetur adipiscing elit. <br> Quisque iaculis
+                        sed odio semper sed odio semper eleifend. Lorem ipsum <br> tempus eu libero  dolor sit amet, consectetur adipiscing elit. Integer <br>
+                        sapien neque, tempus sed odio semper eu libero a, congue consectetur <br> nunc. sed odio semper Duis at dictum tortor.  congue
+                        consectetur nunc. <br> Duis at dictum tortor.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-4 pb-1">
+            <div class="col-xs-12" >
+              <br> <br> <br> <br>
+              <h1 style="text-align: center; font-family: Nunito;
+              font-size: 32px;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #000;" >Conseil d'orientation stratégique</h1>
+              <h4 style="font-family: Nunito;
+              font-size: 20px;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #555;">Une plateforme, de nombreuses opportunités</h4>
+            </div>
+          </div>
+          <div class="row pt-4 pb-1 mini">
+            <div class="row pt-4 pb-1">
+              <div class="col-xs-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card carte h-100">
+                     <img src="./assets/images/person1.png" alt="" style="height: 100%;">
+                      <div class="card-footer">
+                        <h4 class="irene">Madame Néné Fatoumata Tall</h4>
+                        <p class="card-text">Minister of Youth</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card carte h-100">
+                     <img src="./assets/images/person2.png" alt="" style="height: 100%;">
+                      <div class="card-footer">
+                        <h4 class="irene">Mr. Baidy Agne</h4>
+                        <p class="card-text">President of the CNP</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card carte h-100">
+                     <img src="./assets/images/person.png" alt="">
+                      <div class="card-footer">
+                        <h4 class="irene">Madame Irene Mingasson</h4>
+                        <p class="card-text">Ambassador of EUD</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-4 pb-2">
+              <div class="col-xs-12" style="text-align: center; font-size: 32px; font-weight: 600;">
+                <br> <br> <br> <br>
+                <h1 style="text-align: center; font-size: 25px; font-weight: 600;" >Comité directeur</h1>
+                <h4 style="font-family: Nunito;
+                font-size: 20px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #555;">Lorem ipsum </h4>
+              </div>
+            </div>
+            <div class="row pt-4 pb-1">
+              <div class="col-xs-12">
+                <div class="row row-cols-1 row-cols-md-6 g-2 text-left">
+                  <div class="col"style="position: relative;" ><img src="./assets/images/Rectangle695.png" alt="" style="display: block;">
+                    <div class="card overlay">
+                      <span class="over">SOBEL AZIZ NGOM</span> <br>
+                      <span class="over1">Executive Director Senegal Youth Consortium</span>
+      
+                    </div>
+                  </div>
+                  <div class="col" ><img src="./assets/images/Rectangle677.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle697.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle698.png" alt="" style="margin-left: 15px;"></div>
+                  <div class="col"><img src="./assets/images/Rectangle678.png" alt=""  style="margin-left: 40px;"></div>
+                  <div class="col kemo"><img src="./assets/images/Rectangle2.png" alt="" style="margin-left: 60px;"></div>
+                </div>
+              </div>
+            </div> <br><br><br>
+            <div class="row pt-4 pb-1">
+              <div class="col-xs-12">
+                <div class="row row-cols-1 row-cols-md-6 g-2 text-center justify-content-center ">
+                  <div class="col"><img src="./assets/images/Rectangle3.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle4.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle5.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle6.png" alt=""></div>
+                  <div class="col"><img src="./assets/images/Rectangle7.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-4 pb-1">
+              <div class="col-xs-12" style="text-align: center; font-size: 32px; font-weight: 600;">
+                <br> <br> <br> <br>
+                <h1 style="text-align: center; font-size: 25px; font-weight: 600;" >Partenaires</h1>
+                <h4 style="font-family: Nunito;
+                font-size: 20px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #555;">Nos organisations partenaires </h4>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row pt-4 pb-1" style="margin-left: 50px; margin-right: 50px;">
+          <div class="col-xs-12">
+            <!-- <section class="body"> -->
+            <div class="row align-items-center">
+                <div class="col-2">
+                 <img src="/assets/images/image 32.png" >
+                </div>
+                <div class="col-2">
+                    <img src="/assets/images/image 34.png " >
+                </div>
+                <div class="col-2">
+                    <img src="/assets/images/image 35.png" >
+                </div>
+                <div class="col-2">
+                    <img src="/assets/images/image 50.png"  >
+                  </div>
+                  <div class="col-2"  >
+                    <img src="/assets/images/image 51.png"   >
+                  </div>
+                  <div class="col-2">            
+                    <img src="/assets/images/image 57.png" style="margin-left: 35px;">
+                  </div>
+              </div>
+              <br> <br> <br>
+            <!-- </section> -->
+          </div>
+        </div>
+      </div>
+        <div class="row ">
+          <div class="col-xs-12">
+            <app-footer></app-footer>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
